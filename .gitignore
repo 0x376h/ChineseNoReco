@@ -1,0 +1,4 @@
+/bin/
+/target/
+*.releaseBackup
+release.properties
