@@ -1,4 +1,4 @@
-﻿package com.datatiny.chinesenoreco.imp;
+package com.datatiny.chinesenoreco.imp;
 
 import java.util.HashMap;
 

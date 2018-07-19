@@ -1,4 +1,4 @@
-﻿package com.datatiny.chinesenoreco.imp;
+package com.datatiny.chinesenoreco.imp;
 
 import com.datatiny.chinesenoreco.comm.IRecoChineseNo;
 //GS15—2006

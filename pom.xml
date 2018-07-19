@@ -7,10 +7,11 @@
 	<name>ChineseNoReco</name>
 	<description>recognize and verify some chinese no,such as Unified credit code,Organization Code,Business Registration No and etc</description>
 	<url>https://github.com/0x376h/ChineseNoReco</url>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>    
 	</properties>
 
 	<distributionManagement>
@@ -25,7 +26,22 @@
 	</distributionManagement>
 
 	<build>
+	 <sourceDirectory>src</sourceDirectory>
 		<plugins>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.2</version>
+                <configuration>
+                    <archive>
+                     	<manifestEntries>
+              <Built-By>0x376h</Built-By>
+              <url>${project.url}</url>
+            </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+            
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -33,7 +49,7 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					<encoding>UTF-8</encoding> 
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -95,7 +111,8 @@
      						<autoReleaseAfterClose>true</autoReleaseAfterClose>
   						</configuration>
 					</plugin>
-
+		
+            
 				</plugins>
 			</build>
 		</profile>
